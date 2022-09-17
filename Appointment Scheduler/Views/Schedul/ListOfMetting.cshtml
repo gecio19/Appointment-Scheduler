@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Appointment_Scheduler.Models.Metting>
+@{
+    ViewBag.Title = "ListOfMetting";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ListOfMetting</h2>
+
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Data_Start</th>
+        <th>Data_End</th>
+    </tr>
+
+
+    <tr>
+        @foreach (var item in Model)
+        {
+            <td>@item.Name</td>
+            <td>@item.DateTime_Start.ToShortDateString()</td>
+            <td>@item.DateTime_End.ToShortDateString()</td>
+        }
+
+    </tr>
+
+
+
+
+       
+
+</table>
+
+
+
+
+
+
+
+
+
+

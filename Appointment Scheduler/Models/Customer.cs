@@ -8,8 +8,9 @@ namespace Appointment_Scheduler.Models
     public class Customer
     {
         public int Id { get; set; }
-        public List<Schedul> Scheduls { get; set; }
         public String Name { get; set; }
+        public List<Schedul> Scheduls { get; set; }
+
 
     }
 }

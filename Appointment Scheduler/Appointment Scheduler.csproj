@@ -209,6 +209,10 @@
     <Compile Include="Migrations\202209171429594_AddingMettings.designer.cs">
       <DependentUpon>202209171429594_AddingMettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202209171512149_DodawaniePropNameDoMeeting.cs" />
+    <Compile Include="Migrations\202209171512149_DodawaniePropNameDoMeeting.designer.cs">
+      <DependentUpon>202209171512149_DodawaniePropNameDoMeeting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -276,6 +280,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Schedul\Index.cshtml" />
+    <Content Include="Views\Schedul\ListOfMetting.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -308,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202209171429594_AddingMettings.resx">
       <DependentUpon>202209171429594_AddingMettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202209171512149_DodawaniePropNameDoMeeting.resx">
+      <DependentUpon>202209171512149_DodawaniePropNameDoMeeting.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
