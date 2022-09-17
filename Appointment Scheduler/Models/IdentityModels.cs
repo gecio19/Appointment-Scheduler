@@ -24,7 +24,7 @@ namespace Appointment_Scheduler.Models
     {
 
         public DbSet<Customer> Customers { get; set; }
-
+        public DbSet<Metting> Mettings { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
