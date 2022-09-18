@@ -32,19 +32,33 @@
 
 
 
-<h2>ListOfMetting
-    
-    <button type="button" class="btn btn-info ">Add New Meeting</button>
-    </h2>
+<h2 id="HMeeting">
+    ListOfMetting
+
+    @* @<button type="button" class="btn btn-info js-AddNew">Add New Meeting</button> *@
+
+
+
+
+
+
+
+
+</h2>
+
+
+
+
+
 
 
 <body>
 
 
-    <table class="table table-striped">
+    <table id="Meetings" class="table table-striped">
         <thead class="thead-light">
             <tr>
-                <th>Nameth</th>
+                <th>Name</th>
                 <th>Data Start</th>
                 <th>Data End</th>
             </tr>
@@ -69,7 +83,20 @@
 </body>
 
 
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            $("#HMeeting .js-AddNew").on("click", function () {
+                confirm("Are you you wannt?");
 
+            });
+        });
+
+
+
+    </script>
+}
 
 
 
