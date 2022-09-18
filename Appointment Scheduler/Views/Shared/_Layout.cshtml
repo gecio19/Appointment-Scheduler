@@ -10,19 +10,30 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        @Html.ActionLink("www.MyTecBits.com", "Index", "Home", new { area = "" }, new { @class = "navbar - brand" })
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav - link" })</li>
-                <li class="nav-item">@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav - link" })</li>
-                <li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav - link" })</li>
-            </ul>
-        </div>
+
+
+
+
+
+
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Index","Home")">Appointment-Schedul</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("ListOfMetting","Schedul")">MeetingList</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Tygodnik</a>
+            </li>
+        </ul>
+
     </nav>
+
 
 
 
