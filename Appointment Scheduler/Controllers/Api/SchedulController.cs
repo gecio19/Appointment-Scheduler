@@ -12,7 +12,6 @@ namespace Appointment_Scheduler.Controllers.Api
     {
         //żeby dostać sie do bazy danych
 
-
         private ApplicationDbContext _context;
 
         public SchedulController()
@@ -35,7 +34,7 @@ namespace Appointment_Scheduler.Controllers.Api
         // Post /api/meeting
 
         [HttpPost]
-        public Metting CreateMeeting(Metting meeting)
+        public IHttpActionResult CreateMeeting(Metting meeting)
         {
             if (!ModelState.IsValid)
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
@@ -44,7 +43,7 @@ namespace Appointment_Scheduler.Controllers.Api
           //Dodajemy meeting do bazy danych
             _context.Mettings.Add(meeting);
             _context.SaveChanges();
-            return meeting;
+            return Ok();
         }
 
 
@@ -64,8 +63,7 @@ namespace Appointment_Scheduler.Controllers.Api
 
             // aktualizuje dane
 
-            meetinInDb.DateTime_Start = metting.DateTime_Start;
-            meetinInDb.DateTime_End = metting.DateTime_End;
+          
 
             _context.SaveChanges();
         }

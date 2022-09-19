@@ -215,6 +215,18 @@
     <Compile Include="Migrations\202209171512149_DodawaniePropNameDoMeeting.designer.cs">
       <DependentUpon>202209171512149_DodawaniePropNameDoMeeting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202209191125438_DeletingDataEnd_AddingHours.cs" />
+    <Compile Include="Migrations\202209191125438_DeletingDataEnd_AddingHours.designer.cs">
+      <DependentUpon>202209191125438_DeletingDataEnd_AddingHours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202209191130163_AddingNullableToDateTime.cs" />
+    <Compile Include="Migrations\202209191130163_AddingNullableToDateTime.designer.cs">
+      <DependentUpon>202209191130163_AddingNullableToDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202209191158317_PrototypeHoursMIn.cs" />
+    <Compile Include="Migrations\202209191158317_PrototypeHoursMIn.designer.cs">
+      <DependentUpon>202209191158317_PrototypeHoursMIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -350,6 +362,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202209171512149_DodawaniePropNameDoMeeting.resx">
       <DependentUpon>202209171512149_DodawaniePropNameDoMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202209191125438_DeletingDataEnd_AddingHours.resx">
+      <DependentUpon>202209191125438_DeletingDataEnd_AddingHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202209191130163_AddingNullableToDateTime.resx">
+      <DependentUpon>202209191130163_AddingNullableToDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202209191158317_PrototypeHoursMIn.resx">
+      <DependentUpon>202209191158317_PrototypeHoursMIn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
