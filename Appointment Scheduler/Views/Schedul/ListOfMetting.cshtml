@@ -155,11 +155,35 @@
                         <div class="tab-pane container fade" id="menu2">
 
 
+                            @using (Html.BeginForm("CreateOther", "Schedul", FormMethod.Post))
+                            {
+                            <div class="form-group">
+                                @Html.LabelFor(tuple => tuple.Item1.Name)
+                                @Html.TextBoxFor(tuple => tuple.Item1.Name, new { @Name = "Name" })
+
+
+                                <label for="start">Date:</label>
+
+                                <input type="date" id="start" name="Other_Data"
+                                       value="2022-09-19"
+                                       min="2020-01-01" max="2024-12-31">
 
 
 
 
-                        
+                            </div>
+                                <div class="form-group">
+                                    <input id="appt-time" type="time" name="Timestart" value="13:30" />
+                                    To:
+                                    <input id="appt-time2" type="time" name="TimeEnd" value="13:30" />
+
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            }
+
+
+
+
                         </div>
                     </div>
 

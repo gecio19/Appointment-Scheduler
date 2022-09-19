@@ -92,13 +92,29 @@ namespace Appointment_Scheduler.Controllers
 
 
 
+        [HttpPost]
+        public ActionResult CreateOther(Metting meeting, string Timestart, string TimeEnd, string Other_Data)
+        {
+            var Data_splited = Other_Data.Split('-');
+
+            string _cData = Data_splited[2] +'-'+ Data_splited[1] + '-' + Data_splited[0];
+            DateTime TargetData = DateTime.Parse(_cData);
+
+            meeting.DateTime_Start = TargetData;
+
+            meeting.Start_Hours = Timestart;
+            meeting.End_Hours = TimeEnd;
 
 
 
 
+            _contex.Mettings.Add(meeting);
+            _contex.SaveChanges();
 
+            return RedirectToAction("ListOfMetting", "Schedul");
+        }
 
-
+       
 
         #endregion
     }
